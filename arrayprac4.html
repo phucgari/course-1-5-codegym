@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="board"></p>
+<button onclick="change()">change</button>
+</body>
+<script>
+let board=new Array(25)
+for (let i=0;i<25;i++){
+  board[i]="0&nbsp;&nbsp;"
+  if((i+1)%5==0) {
+      board[i] += "<br>"
+  }
+}
+document.getElementById("board").innerHTML= board.join("")
+function change(){
+    let x=+prompt("x:")
+    let y=+prompt("y:")
+    let position=x+(y*5)
+
+    if (position%5==0){
+        board[position-1]="x&nbsp;&nbsp;<br>"
+    }else{
+        board[position-1]="x&nbsp;&nbsp;"
+    }
+    document.getElementById("board").innerHTML= board.join("")
+}
+
+</script>
+</html>

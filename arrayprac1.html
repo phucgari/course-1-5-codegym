@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="add">
+<button onclick="add()" >add</button>
+<br>
+<label id="result"></label>
+</body>
+<script>
+    a=new Array(1)
+    let i=0
+    let write=""
+function add(){
+    let add=document.getElementById("add").value
+    a[i]=add
+    write +=a[i]+"<br>"
+    document.getElementById("result").innerHTML= write
+    i++
+}
+</script>
+</html>

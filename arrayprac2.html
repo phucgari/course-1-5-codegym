@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = [-3, 5, 1, 3, 2, 10];
+    let value = prompt("Enter a number: ");
+    let i
+    for(i=0; i<numbers.length;i++){
+        if (value==numbers[i]){
+            alert("number"+value+"found at position"+i)
+            break
+        }
+    }
+    if(i==numbers.length){
+        alert("sorry,your number isn't here")
+    }
+
+</script>
+</html>
