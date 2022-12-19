@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Từ điển: Bạn nhập từ đi</h1>
+<input type="text" id="word">
+<button onclick="tran()">Dịch</button>
+<p id="res"></p>
+</body>
+<script>
+  let arr_eng = ["banana", "apple", "orange", "pen", "pencil", "book"];
+  let arr_vie = ["chuối", "táo", "cam", "bút", "bút chì", "sách"];
+function tran(){
+  let index=arr_eng.indexOf(document.getElementById("word").value)
+  let result=arr_vie[index]
+  document.getElementById("res").innerHTML=result
+}
+</script>
+</html>
