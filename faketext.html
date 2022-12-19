@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<centre>
+    <h2>Type anything!</h2>
+    <textarea id="txt" onkeydown="fake()" cols="30" rows="10"></textarea>
+</centre>
+</body>
+<script>
+    let text="Tôi là một đứa ngốc!"
+    let i=0
+    let cur=""
+    function fake(){
+        cur+=text[i]
+        document.getElementById("txt").value=cur
+        i++
+        if(i==20){
+            i=0
+        }
+    }
+</script>
+</html>
